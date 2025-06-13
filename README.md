@@ -79,7 +79,7 @@ import joblib
 
 ### **Business Dashboard**
 
-Dashboard "Attrition Overview Dashboard" adalah alat visualisasi data yang komprehensif, dirancang untuk memberikan pemahaman mendalam mengenai pola dan faktor-faktor yang berkontribusi terhadap tingkat *attrition* (keluar masuknya karyawan) di perusahaan Jaya Jaya Maju. Dashboard ini menyajikan berbagai metrik kunci melalui grafik dan bagan yang intuitif, memungkinkan divisi HR dan manajemen untuk dengan cepat mengidentifikasi area masalah dan membuat keputusan berbasis data.
+Dashboard yang dibangun tidak hanya menampilkan visualisasi pola attrition, tetapi juga menyertakan modul prediksi yang memungkinkan HR untuk menginput data karyawan dan memperoleh probabilitas risiko attrition secara real-time. Dengan demikian, dashboard ini menjadi alat bantu komprehensif yang menggabungkan analisis historis dan prediktif untuk mendukung pengambilan keputusan yang lebih cepat dan tepat sasaran.
 
 **Komponen Utama Dashboard:**
 
@@ -94,13 +94,8 @@ Dashboard "Attrition Overview Dashboard" adalah alat visualisasi data yang kompr
 
 ### **Conclusion**
 
-Proyek analisis *attrition* menggunakan "Attrition Overview Dashboard" telah menghasilkan beberapa kesimpulan kunci mengenai permasalahan tinggi tingkat keluar masuknya karyawan di Jaya Jaya Maju:
-
-1.  **Karyawan Muda dan Baru Sangat Rentan:** Tingkat *attrition* tertinggi ditemukan pada karyawan dengan masa kerja di bawah 5 tahun dan kelompok usia 20-39 tahun, khususnya di Job Level 1 dan 2. Ini menunjukkan adanya tantangan serius dalam fase awal adaptasi dan pengembangan karir karyawan.
-2.  **Overtime adalah Pemicu Utama:** Karyawan yang sering melakukan kerja lembur (Overtime: Ya) menunjukkan tingkat *attrition* yang jauh lebih tinggi dibandingkan dengan yang tidak. Hal ini mengindikasikan bahwa beban kerja berlebihan atau kurangnya *work-life balance* menjadi faktor signifikan.
-3.  **Keterlibatan Kerja Berpengaruh:** Karyawan dengan tingkat keterlibatan kerja "Rendah" dan "Sedang" memiliki kecenderungan lebih tinggi untuk keluar, menyoroti pentingnya kepuasan dan koneksi karyawan terhadap pekerjaan mereka.
-4.  **Variasi Attrition Antar Departemen dan Jarak:** Departemen Sales dan HR menunjukkan pola *attrition* yang perlu perhatian, sementara faktor jarak tempuh (baik sangat dekat maupun sangat jauh) juga berkorelasi dengan tingkat *attrition*.
-
+Penggunaan model klasifikasi prediktif telah memberikan nilai tambah yang signifikan dalam mengelola permasalahan attrition di Jaya Jaya Maju. Dengan memanfaatkan model tersebut, perusahaan dapat memfokuskan perhatian pada karyawan yang berisiko tinggi sebelum mereka memutuskan untuk keluar, sehingga meningkatkan efektivitas program retensi dan mengurangi biaya terkait penggantian karyawan.
+Proyek analisis *attrition* menggunakan "Attrition Overview Dashboard" telah menghasilkan beberapa kesimpulan kunci mengenai permasalahan tinggi tingkat keluar masuknya karyawan di Jaya Jaya Maju
 Secara keseluruhan, konklusi proyek ini adalah bahwa *attrition* di Jaya Jaya Maju bukan disebabkan oleh satu faktor tunggal, melainkan kombinasi dari masa kerja yang pendek, beban kerja lembur, kurangnya keterlibatan, dan faktor spesifik departemen/jarak. Untuk mengatasi masalah ini secara efektif, perusahaan perlu menerapkan pendekatan multi-faceted yang menargetkan akar masalah yang teridentifikasi.
 
 ### **Rekomendasi Action Items**
@@ -120,3 +115,4 @@ Berikut adalah beberapa rekomendasi *action items* yang harus dilakukan perusaha
 * **Tanggung Jawab:** Manajemen Senior, Departemen HR (HR Business Partner), Kepala Departemen terkait.
 * **Metrik Keberhasilan:** Penurunan rata-rata jam *overtime* per karyawan (misalnya, target 20% penurunan), penurunan *attrition* pada kelompok karyawan yang sebelumnya sering *overtime* (misalnya, target 15% penurunan), peningkatan persepsi karyawan terhadap *work-life balance* melalui survei (misalnya, target 10% peningkatan).
 * **Timeline:** Audit & Rekomendasi (Q3 2025), Implementasi Kebijakan & Solusi (Q4 2025).
+
