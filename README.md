@@ -77,56 +77,46 @@ from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, r
 import joblib
 ```
 
-## 📊 **Business Dashboard**
+### **Business Dashboard**
 
-Dashboard yang dibuat bertujuan untuk memberikan gambaran menyeluruh mengenai **tingkat attrition (keluar masuk karyawan)** di perusahaan Jaya Jaya Maju. Visualisasi mencakup berbagai dimensi seperti:
+Dashboard "Attrition Overview Dashboard" adalah alat visualisasi data yang komprehensif, dirancang untuk memberikan pemahaman mendalam mengenai pola dan faktor-faktor yang berkontribusi terhadap tingkat *attrition* (keluar masuknya karyawan) di perusahaan Jaya Jaya Maju. Dashboard ini menyajikan berbagai metrik kunci melalui grafik dan bagan yang intuitif, memungkinkan divisi HR dan manajemen untuk dengan cepat mengidentifikasi area masalah dan membuat keputusan berbasis data.
 
-* **Lama bekerja di perusahaan**
-* **Rentang usia**
-* **Jarak tempat tinggal dari kantor**
-* **Pengaruh lembur (OverTime)**
-* **Level jabatan**
-* **Keterlibatan kerja (Job Involvement)**
-* **Departemen kerja**
+**Komponen Utama Dashboard:**
 
-Dashboard ini memudahkan manajemen dan tim HR untuk **mengidentifikasi pola dan faktor utama** yang berkontribusi terhadap tingginya attrition. Dengan insight dari dashboard ini, keputusan strategis dapat dibuat secara **berbasis data (data-driven decision making)**.
+* **Distribusi Karyawan Bertahan vs. Keluar:** Memberikan gambaran persentase karyawan yang masih aktif dan yang telah meninggalkan perusahaan.
+* **Tren Attrition Berdasarkan Lama Bekerja:** Menunjukkan bagaimana tingkat *attrition* bervariasi seiring dengan masa kerja karyawan, menyoroti periode kritis di mana karyawan cenderung keluar.
+* **Tren Attrition Berdasarkan Rentang Usia:** Mengidentifikasi kelompok usia mana yang memiliki tingkat *attrition* tertinggi.
+* **Attrition per Departemen:** Memperlihatkan departemen mana yang paling terpengaruh oleh *attrition*, membantu dalam penargetan intervensi.
+* **Attrition Berdasarkan Jarak (distance\_group):** Menganalisis dampak jarak tempuh karyawan dari rumah ke kantor terhadap keputusan untuk berhenti.
+* **Pengaruh OverTime:** Menilai korelasi antara jam kerja lembur dan tingkat *attrition*.
+* **Attrition Level Jabatan (JobLevel):** Menjelaskan bagaimana *attrition* berbeda di berbagai tingkatan jabatan dalam organisasi.
+* **Attrition Berdasarkan Keterlibatan Kerja (Job Involvement):** Mengungkap hubungan antara tingkat keterlibatan karyawan dengan kemungkinan mereka untuk keluar.
 
-> *(Link dashboard tidak tersedia karena berbentuk gambar. Namun, dapat diimplementasikan menggunakan tools seperti Power BI, Tableau, atau Google Data Studio berdasarkan struktur visual yang ditampilkan.)*
+### **Conclusion**
 
----
+Proyek analisis *attrition* menggunakan "Attrition Overview Dashboard" telah menghasilkan beberapa kesimpulan kunci mengenai permasalahan tinggi tingkat keluar masuknya karyawan di Jaya Jaya Maju:
 
-## **Conclusion**
+1.  **Karyawan Muda dan Baru Sangat Rentan:** Tingkat *attrition* tertinggi ditemukan pada karyawan dengan masa kerja di bawah 5 tahun dan kelompok usia 20-39 tahun, khususnya di Job Level 1 dan 2. Ini menunjukkan adanya tantangan serius dalam fase awal adaptasi dan pengembangan karir karyawan.
+2.  **Overtime adalah Pemicu Utama:** Karyawan yang sering melakukan kerja lembur (Overtime: Ya) menunjukkan tingkat *attrition* yang jauh lebih tinggi dibandingkan dengan yang tidak. Hal ini mengindikasikan bahwa beban kerja berlebihan atau kurangnya *work-life balance* menjadi faktor signifikan.
+3.  **Keterlibatan Kerja Berpengaruh:** Karyawan dengan tingkat keterlibatan kerja "Rendah" dan "Sedang" memiliki kecenderungan lebih tinggi untuk keluar, menyoroti pentingnya kepuasan dan koneksi karyawan terhadap pekerjaan mereka.
+4.  **Variasi Attrition Antar Departemen dan Jarak:** Departemen Sales dan HR menunjukkan pola *attrition* yang perlu perhatian, sementara faktor jarak tempuh (baik sangat dekat maupun sangat jauh) juga berkorelasi dengan tingkat *attrition*.
 
-Berdasarkan hasil visualisasi dan analisis data, ditemukan bahwa **tingginya tingkat attrition** di perusahaan Jaya Jaya Maju disebabkan oleh kombinasi beberapa faktor, di antaranya:
+Secara keseluruhan, konklusi proyek ini adalah bahwa *attrition* di Jaya Jaya Maju bukan disebabkan oleh satu faktor tunggal, melainkan kombinasi dari masa kerja yang pendek, beban kerja lembur, kurangnya keterlibatan, dan faktor spesifik departemen/jarak. Untuk mengatasi masalah ini secara efektif, perusahaan perlu menerapkan pendekatan multi-faceted yang menargetkan akar masalah yang teridentifikasi.
 
-* Tingginya jumlah karyawan yang keluar pada **tahun-tahun awal bekerja (terutama tahun pertama)**
-* Karyawan dengan usia muda (20–29 tahun) cenderung keluar lebih banyak
-* Lembur yang berlebihan berkorelasi dengan tingkat keluar yang tinggi
-* Level jabatan rendah (1 dan 2) menunjukkan tingkat attrition paling tinggi
-* Departemen **Sales dan R\&D** menyumbang jumlah keluar terbanyak
+### **Rekomendasi Action Items**
 
-Hal ini menunjukkan bahwa **perusahaan memiliki tantangan besar dalam mempertahankan karyawan muda dan level entry** yang kemungkinan besar belum merasa cukup terikat atau memiliki prospek karier yang jelas.
+Berikut adalah beberapa rekomendasi *action items* yang harus dilakukan perusahaan guna menyelesaikan permasalahan *attrition* yang tinggi dan mencapai target retensi karyawan:
 
----
+**Action Item 1: Inisiatif Retensi Karyawan Baru & Pengembangan Karir Awal**
 
-## **Rekomendasi Action Items**
+* **Deskripsi:** Menerapkan program *mentorship* atau *buddy system* terstruktur untuk semua karyawan baru (Job Level 1 & 2) selama 6-12 bulan pertama. Bersamaan dengan itu, kembangkan dan komunikasikan jalur karir yang jelas serta sediakan pelatihan keterampilan (baik *soft skill* maupun *hard skill*) yang relevan untuk mendukung pertumbuhan mereka. Ini bertujuan untuk meningkatkan keterikatan dan mengurangi rasa ketidakpastian di awal karir mereka di perusahaan.
+* **Tanggung Jawab:** Departemen HR (Talent Acquisition & Learning & Development), Manajer Departemen.
+* **Metrik Keberhasilan:** Penurunan tingkat *attrition* pada 1 tahun pertama masa kerja (misalnya, target penurunan 5%), peningkatan skor kepuasan karyawan baru dalam survei *onboarding* (misalnya, target 10% peningkatan).
+* **Timeline:** Perencanaan & Desain (Q3 2025), Implementasi Pilot Program (Q4 2025).
 
-### **Action Item 1: Implementasi Program Retensi Dini**
+**Action Item 2: Pengelolaan Overtime dan Promosi Work-Life Balance**
 
-Fokus pada karyawan di tahun pertama dengan program seperti:
-
-* Onboarding yang terstruktur
-* Mentoring personal
-* Evaluasi dan diskusi karier berkala di 3 dan 6 bulan pertama
-
-### 🧭 **Action Item 2: Audit dan Reduksi Beban Lembur**
-
-Lakukan audit beban kerja dan kebijakan lembur, terutama pada departemen yang memiliki tingkat attrition tinggi. Tinjau ulang sistem target atau insentif yang mungkin menyebabkan overwork.
-
-### 👥 **Action Item 3: Program Keterlibatan Karyawan Muda**
-
-Tawarkan program pengembangan karier jangka pendek, sertifikasi, atau pelatihan berbasis minat untuk usia 20–29 tahun agar mereka melihat prospek jangka panjang di perusahaan.
-
-### 📊 **Action Item 4: Monitoring Rutin Melalui Dashboard**
-
-Gunakan dashboard attrition ini sebagai alat **monitoring bulanan**. Update data secara berkala dan gunakan insight-nya untuk **early intervention** jika ditemukan tren negatif baru.
+* **Deskripsi:** Lakukan audit menyeluruh terhadap beban kerja dan jam kerja lembur di departemen-departemen kunci (terutama Sales), identifikasi penyebab utamanya (misalnya, kurangnya staf, inefisiensi proses). Berdasarkan audit, tetapkan batasan jam kerja lembur yang realistis dan terapkan kebijakan *overtime* yang lebih ketat, atau pertimbangkan penambahan staf jika diperlukan. Edukasi manajer tentang pentingnya *work-life balance* dan berikan mereka alat untuk mengelola beban kerja tim secara efektif.
+* **Tanggung Jawab:** Manajemen Senior, Departemen HR (HR Business Partner), Kepala Departemen terkait.
+* **Metrik Keberhasilan:** Penurunan rata-rata jam *overtime* per karyawan (misalnya, target 20% penurunan), penurunan *attrition* pada kelompok karyawan yang sebelumnya sering *overtime* (misalnya, target 15% penurunan), peningkatan persepsi karyawan terhadap *work-life balance* melalui survei (misalnya, target 10% peningkatan).
+* **Timeline:** Audit & Rekomendasi (Q3 2025), Implementasi Kebijakan & Solusi (Q4 2025).
