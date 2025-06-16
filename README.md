@@ -1,4 +1,4 @@
-# 📘 **Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Jaya Jaya Maju**
+# 📘 **Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Edutech**
 
 ### 🏢 **Business Understanding**
 
@@ -104,9 +104,6 @@ docker run -d -p 3000:3000 `
 | **Password**  | `root123`                                      |
 | **Port**      | 3000                                           |
 
-
-
-
 ### **Business Dashboard**
 
 Dashboard yang dibangun tidak hanya menampilkan visualisasi pola attrition, tetapi juga menyertakan modul prediksi yang memungkinkan HR untuk menginput data karyawan dan memperoleh probabilitas risiko attrition secara real-time. Dengan demikian, dashboard ini menjadi alat bantu komprehensif yang menggabungkan analisis historis dan prediktif untuk mendukung pengambilan keputusan yang lebih cepat dan tepat sasaran.
@@ -145,7 +142,7 @@ Melalui pemahaman mendalam atas pola-pola ini, departemen HR kini memiliki dasar
 * Meninjau ulang struktur kompensasi dan beban kerja di departemen yang memiliki tingkat attrition tinggi.
 
 
-### **Rekomendasi Action Items**
+### **Rekomendasi Action Items (Optional)**
 
 Berikut adalah beberapa rekomendasi *action items* yang harus dilakukan perusahaan guna menyelesaikan permasalahan *attrition* yang tinggi dan mencapai target retensi karyawan:
 
