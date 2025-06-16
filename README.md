@@ -1,5 +1,3 @@
-
-
 # 📘 **Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Jaya Jaya Maju**
 
 ### 🏢 **Business Understanding**
@@ -61,21 +59,53 @@ Fokus proyek ini adalah melakukan analisis serta membangun model prediksi attrit
 
 Sumber data: [Employee Data Jaya Jaya Maju](https://github.com/dicodingacademy/dicoding_dataset/blob/main/employee/employee_data.csv)
 
-Setup lingkungan kerja:
 
-```python
-import pandas as pd
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
-import xgboost as xgb
-from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
-import joblib
+---
+#### **1. Setup Lingkungan Kerja (Conda Environment)**
+
+##### 🔹 Buat Environment Baru
+
+```bash
+conda create -n attrition_analysis python=3.11.13 -y
+conda activate attrition_analysis
 ```
+
+##### 🔹 Instalasi dari `requirements.txt`
+
+Jika environment sudah dibuat:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+#### **2. Setup Dashboard Metabase (Docker)**
+
+##### 🔹 Jalankan Metabase di Docker
+
+```powershell
+docker run -d -p 3000:3000 `
+  -v "${PWD}:/metabase-data" `
+  -e "MB_DB_FILE=/metabase-data/metabase.db" `
+  --name metabase metabase/metabase
+```
+
+> ⚠️ Untuk pengguna **Linux/Mac**, gunakan tanda `\` untuk line break atau tulis satu baris.
+
+---
+
+##### 🔹 Kredensial Metabase (Default Login)
+
+| Item          | Value                                          |
+| ------------- | ---------------------------------------------- |
+| **URL Akses** | [http://localhost:3000](http://localhost:3000) |
+| **Email**     | `root@mail.com`                                |
+| **Password**  | `root123`                                      |
+| **Port**      | 3000                                           |
+
+
+
 
 ### **Business Dashboard**
 
@@ -93,10 +123,27 @@ Dashboard yang dibangun tidak hanya menampilkan visualisasi pola attrition, teta
 * **Attrition Berdasarkan Keterlibatan Kerja (Job Involvement):** Mengungkap hubungan antara tingkat keterlibatan karyawan dengan kemungkinan mereka untuk keluar.
 
 ### **Conclusion**
+Berdasarkan hasil analisis data dan visualisasi dashboard "Attrition Overview", dapat disimpulkan bahwa permasalahan *attrition* di perusahaan **Jaya Jaya Maju** disebabkan oleh sejumlah pola dan faktor yang jelas, bukan oleh satu penyebab tunggal. Temuan-temuan utama yang menjawab permasalahan HR antara lain:
 
-Penggunaan model klasifikasi prediktif telah memberikan nilai tambah yang signifikan dalam mengelola permasalahan attrition di Jaya Jaya Maju. Dengan memanfaatkan model tersebut, perusahaan dapat memfokuskan perhatian pada karyawan yang berisiko tinggi sebelum mereka memutuskan untuk keluar, sehingga meningkatkan efektivitas program retensi dan mengurangi biaya terkait penggantian karyawan.
-Proyek analisis *attrition* menggunakan "Attrition Overview Dashboard" telah menghasilkan beberapa kesimpulan kunci mengenai permasalahan tinggi tingkat keluar masuknya karyawan di Jaya Jaya Maju
-Secara keseluruhan, konklusi proyek ini adalah bahwa *attrition* di Jaya Jaya Maju bukan disebabkan oleh satu faktor tunggal, melainkan kombinasi dari masa kerja yang pendek, beban kerja lembur, kurangnya keterlibatan, dan faktor spesifik departemen/jarak. Untuk mengatasi masalah ini secara efektif, perusahaan perlu menerapkan pendekatan multi-faceted yang menargetkan akar masalah yang teridentifikasi.
+1. **Kelompok usia 20–24 tahun menunjukkan tingkat attrition tertinggi**, terutama bagi mereka yang berada di Job Level 1 dan memiliki masa kerja di bawah 2 tahun. Hal ini menunjukkan bahwa karyawan muda dengan pengalaman kerja awal cenderung meninggalkan perusahaan lebih cepat, terutama bila tidak mendapatkan pembinaan atau jalur karir yang jelas.
+
+2. **Karyawan dengan tingkat kepuasan kerja rendah dan keterlibatan kerja (Job Involvement) rendah memiliki probabilitas attrition yang signifikan lebih tinggi** dibandingkan mereka yang merasa puas dan terlibat secara aktif dalam pekerjaan. Ini menandakan bahwa persepsi positif terhadap pekerjaan menjadi indikator kuat terhadap retensi karyawan.
+
+3. **Departemen Sales memiliki angka attrition tertinggi dibandingkan departemen lain**, terutama pada posisi dengan jam lembur tinggi (OverTime). Ini menunjukkan bahwa beban kerja dan tekanan operasional di departemen ini menjadi pemicu utama keluarnya karyawan.
+
+4. **Jarak tempat tinggal karyawan dari kantor (distance from home) berbanding lurus dengan kemungkinan keluar dari perusahaan.** Karyawan yang tinggal lebih dari 15 km dari kantor memiliki tingkat attrition lebih tinggi dibandingkan mereka yang tinggal lebih dekat. Jarak ini tampaknya memengaruhi work-life balance dan kelelahan harian.
+
+5. **Karyawan dengan penghasilan bulanan (MonthlyIncome) yang relatif rendah cenderung lebih cepat keluar**, terutama jika dikombinasikan dengan faktor seperti lembur tinggi dan keterlibatan rendah. Ini mengindikasikan pentingnya insentif yang kompetitif dalam mempertahankan tenaga kerja.
+
+6. **Attrition cenderung tinggi pada masa kerja 1–3 tahun pertama**, yang merupakan masa kritis adaptasi dan pembentukan loyalitas. Tanpa adanya program onboarding dan pendampingan yang kuat, karyawan dalam fase ini lebih berisiko keluar.
+
+Melalui pemahaman mendalam atas pola-pola ini, departemen HR kini memiliki dasar data yang kuat untuk merancang strategi retensi yang lebih efektif dan tertarget, seperti:
+
+* Fokus pada intervensi terhadap karyawan muda dan baru.
+* Meningkatkan kepuasan kerja dan keterlibatan karyawan melalui program keterlibatan.
+* Menyediakan fleksibilitas kerja bagi karyawan dengan jarak tempuh jauh.
+* Meninjau ulang struktur kompensasi dan beban kerja di departemen yang memiliki tingkat attrition tinggi.
+
 
 ### **Rekomendasi Action Items**
 
