@@ -49,10 +49,6 @@ Fokus proyek ini adalah melakukan analisis serta membangun model prediksi attrit
 
   * Mengukur kinerja model dengan metrik akurasi, presisi, recall, dan F1-score.
   * Menampilkan confusion matrix untuk mengevaluasi distribusi prediksi.
-
-* **Pelaporan Hasil**
-
-  * Menyajikan ringkasan hasil performa model dalam bentuk tabel.
   * Menentukan model dengan performa terbaik berdasarkan metrik evaluasi.
 
 ### Persiapan
