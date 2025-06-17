@@ -1,6 +1,6 @@
-# 📘 **Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Edutech**
+# **Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Edutech**
 
-### 🏢 **Business Understanding**
+### **Business Understanding**
 
 **Latar Belakang Bisnis**
 
