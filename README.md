@@ -42,7 +42,7 @@ Fokus proyek ini adalah melakukan analisis serta membangun model prediksi attrit
 
 * **Pemodelan Data (Modeling)**
 
-  * Membangun beberapa model klasifikasi seperti K-Nearest Neighbors, Decision Tree, Random Forest, Support Vector Machine, dan Naive Bayes.
+  * Membangun beberapa model klasifikasi seperti K-Nearest Neighbors, Random Forest dan xgboost.
   * Melakukan pembagian data menjadi set pelatihan dan pengujian dengan train-test split.
 
 * **Evaluasi Model (Evaluation)**
