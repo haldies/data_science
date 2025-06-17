@@ -120,26 +120,21 @@ Dashboard yang dibangun tidak hanya menampilkan visualisasi pola attrition, teta
 * **Attrition Berdasarkan Keterlibatan Kerja (Job Involvement):** Mengungkap hubungan antara tingkat keterlibatan karyawan dengan kemungkinan mereka untuk keluar.
 
 ### **Conclusion**
-Berdasarkan hasil analisis data dan visualisasi dashboard "Attrition Overview", dapat disimpulkan bahwa permasalahan *attrition* di perusahaan **Jaya Jaya Maju** disebabkan oleh sejumlah pola dan faktor yang jelas, bukan oleh satu penyebab tunggal. Temuan-temuan utama yang menjawab permasalahan HR antara lain:
+Berdasarkan hasil analisis data dan visualisasi dashboard "Attrition Overview", dapat disimpulkan bahwa permasalahan *attrition* di perusahaan Jaya Jaya Maju disebabkan oleh sejumlah pola dan faktor yang jelas, bukan oleh satu penyebab tunggal. Temuan-temuan utama yang menjawab permasalahan HR antara lain:
 
-1. **Kelompok usia 20–24 tahun menunjukkan tingkat attrition tertinggi**, terutama bagi mereka yang berada di Job Level 1 dan memiliki masa kerja di bawah 2 tahun. Hal ini menunjukkan bahwa karyawan muda dengan pengalaman kerja awal cenderung meninggalkan perusahaan lebih cepat, terutama bila tidak mendapatkan pembinaan atau jalur karir yang jelas.
-
-2. **Karyawan dengan tingkat kepuasan kerja rendah dan keterlibatan kerja (Job Involvement) rendah memiliki probabilitas attrition yang signifikan lebih tinggi** dibandingkan mereka yang merasa puas dan terlibat secara aktif dalam pekerjaan. Ini menandakan bahwa persepsi positif terhadap pekerjaan menjadi indikator kuat terhadap retensi karyawan.
-
-3. **Departemen Sales memiliki angka attrition tertinggi dibandingkan departemen lain**, terutama pada posisi dengan jam lembur tinggi (OverTime). Ini menunjukkan bahwa beban kerja dan tekanan operasional di departemen ini menjadi pemicu utama keluarnya karyawan.
-
-4. **Jarak tempat tinggal karyawan dari kantor (distance from home) berbanding lurus dengan kemungkinan keluar dari perusahaan.** Karyawan yang tinggal lebih dari 15 km dari kantor memiliki tingkat attrition lebih tinggi dibandingkan mereka yang tinggal lebih dekat. Jarak ini tampaknya memengaruhi work-life balance dan kelelahan harian.
-
-5. **Karyawan dengan penghasilan bulanan (MonthlyIncome) yang relatif rendah cenderung lebih cepat keluar**, terutama jika dikombinasikan dengan faktor seperti lembur tinggi dan keterlibatan rendah. Ini mengindikasikan pentingnya insentif yang kompetitif dalam mempertahankan tenaga kerja.
-
-6. **Attrition cenderung tinggi pada masa kerja 1–3 tahun pertama**, yang merupakan masa kritis adaptasi dan pembentukan loyalitas. Tanpa adanya program onboarding dan pendampingan yang kuat, karyawan dalam fase ini lebih berisiko keluar.
+* **Kelompok usia 20-29 tahun menunjukkan tingkat *attrition* tertinggi.** Hal ini terlihat jelas pada grafik "Tren by Rentang Usia" di mana kelompok usia 20-29 memiliki "Rate yang keluar" (Rate of Exit) tertinggi, mencapai 61. Ini menunjukkan bahwa karyawan muda cenderung meninggalkan perusahaan lebih cepat.
+* **Karyawan dengan Job Level 1 dan 2 memiliki angka *attrition* tertinggi.** Grafik "Attrition Level Jabatan" menunjukkan "Keluar" (Exit) tertinggi pada Job Level 1 (27.41%) dan Job Level 2 (19.16%). Hal ini mengindikasikan bahwa posisi staf atau entry-level memiliki tingkat keluar yang lebih tinggi.
+* **Departemen Research & Development dan Sales memiliki angka *attrition* tertinggi.** Pada grafik "Attrition per Departemen", Research & Development menunjukkan jumlah "Keluar" (Exit) tertinggi dengan 101 karyawan, diikuti oleh Sales dengan 96 karyawan. Human Resources juga menunjukkan angka yang signifikan dengan 38 karyawan. Ini menunjukkan bahwa beban kerja dan kondisi spesifik di departemen ini mungkin menjadi pemicu utama keluarnya karyawan.
+* **Karyawan dengan jam lembur tinggi (OverTime) memiliki probabilitas *attrition* yang signifikan lebih tinggi.** Grafik "Pengaruh OverTime" dengan jelas menunjukkan bahwa karyawan yang sering lembur ("Yes") memiliki jumlah "Keluar" (Exit) yang jauh lebih tinggi (98 orang) dibandingkan mereka yang tidak lembur ("No") (81 orang). Persentase keluar untuk karyawan lembur juga lebih tinggi (21.92%). Ini menandakan bahwa beban kerja yang berlebihan dapat menjadi penyebab utama keluarnya karyawan.
+* **Jarak tempat tinggal karyawan dari kantor (distance from home) berbanding lurus dengan kemungkinan keluar dari perusahaan.** Grafik "Tren Attrition By Lama Bekerja" (sepertinya ada kesalahan label di dashboard, ini lebih merepresentasikan "Attrition by Jarak" atau "Distance from Home") menunjukkan bahwa karyawan yang tinggal jauh (21+ km) memiliki tingkat *attrition* yang lebih tinggi. Meskipun grafik ini lebih menunjukkan tren masa kerja, data di bagian bawah grafik yang menunjukkan "15-20 km" dan "21+ km" memiliki persentase keluar yang lebih tinggi dibandingkan jarak yang lebih dekat.
+* ***Attrition* cenderung tinggi pada masa kerja 0-5 km dan 10-15 km.** (Catatan: Ini adalah interpretasi dari "Tren Attrition By Lama Bekerja" yang mungkin salah label, tetapi jika diinterpretasikan sebagai jarak, maka ada pola di sana). Jika grafik "Tren Attrition By Lama Bekerja" memang merujuk pada masa kerja, maka tingkat keluar cenderung tinggi pada masa kerja awal (0-5 km, yang kemungkinan adalah 0-5 tahun) dengan jumlah 395 dan persentase 12. Ini menunjukkan bahwa masa kerja awal adalah periode kritis untuk retensi karyawan.
 
 Melalui pemahaman mendalam atas pola-pola ini, departemen HR kini memiliki dasar data yang kuat untuk merancang strategi retensi yang lebih efektif dan tertarget, seperti:
 
-* Fokus pada intervensi terhadap karyawan muda dan baru.
-* Meningkatkan kepuasan kerja dan keterlibatan karyawan melalui program keterlibatan.
-* Menyediakan fleksibilitas kerja bagi karyawan dengan jarak tempuh jauh.
-* Meninjau ulang struktur kompensasi dan beban kerja di departemen yang memiliki tingkat attrition tinggi.
+* Fokus pada intervensi terhadap karyawan muda, terutama di Job Level 1 dan 2.
+* Menganalisis dan mengelola beban kerja, khususnya di departemen Research & Development dan Sales, serta meninjau kebijakan lembur.
+* Menyediakan fleksibilitas kerja atau dukungan transportasi bagi karyawan dengan jarak tempuh jauh.
+* Memperkuat program *onboarding* dan pembinaan bagi karyawan baru di masa kerja awal.
 
 
 ### **Rekomendasi Action Items (Optional)**
